@@ -1,0 +1,56 @@
+/*Adicionar as propriedades margin e padding no seletor universal (asterico)*/
+*{
+margin: 0;
+padding: 0;
+}
+
+/*Iniciar Seção cabeçalho*/
+
+.cabecalho {
+    background-color:#424E61 ;
+color: aliceblue;
+display: flex;
+justify-content: space-around
+align-items: center;
+padding: 24px 0;
+}
+
+.cabecalho-imagem {
+width: 8%;
+border-radius: 22px; /*para definir bordas arredondadas da imagem*/
+}
+
+/*A lista não ordenada ul precisa estar alinhada em uma única linha.
+Crie um seletor para a classe .cabecalho-lista-item, adicionando nele
+a propriedade display com o valor inline-block:*/
+/*Aumente os espaçamentos entre os textos com a propriedade margin de valor 0 16px:*/
+/*Aumente a fonte através da propriedade font-size de valor 24px.*/
+
+.cabecalho-lista-item{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 24px;
+}
+
+.cabecalho-lista-item a {
+    text-decoration: none;
+    color: #FFFFFF; /*cor*/
+}
+
+/*Efeito alterar a cor quando passa o moue*/
+a:hover {
+color:#16CFF8
+}
+
+/*alterar a cor quando clicar com o mouse*/
+a:active{
+    color: cadetblue;(105, 144, 216);
+}
+
+
+/*Iniciar Seção escola*/
+
+/* crie um seletor (.) para a classe escola-imagem, determinando uma largura width de 25%:*/
+.escola-imagem{
+    width:25%;/*largura*/
+}
