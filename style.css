@@ -10,7 +10,7 @@ padding: 0;
     background-color:#424E61 ;
 color: aliceblue;
 display: flex;
-justify-content: space-around
+justify-content: space-around;
 align-items: center;
 padding: 24px 0;
 }
