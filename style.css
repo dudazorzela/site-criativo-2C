@@ -1,30 +1,19 @@
-/*Adicionar as propriedades margin e padding no seletor universal (asterico)*/
-*{
-margin: 0;
-padding: 0;
+body{
+    font-family: 'poppins',sans-serif;
 }
-
-/*Iniciar Seção cabeçalho*/
-
 .cabecalho {
-    background-color:#fc008a ;
-color: aliceblue;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 24px 0;
+    background-color: #ff1493;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
 }
 
-.cabecalho-imagem {
-width: 8%;
-border-radius: 22px; /*para definir bordas arredondadas da imagem*/
+.cabecalho-imagem{
+    width: 8%;
+    border-radius: 22px;
 }
-
-/*A lista não ordenada ul precisa estar alinhada em uma única linha.
-Crie um seletor para a classe .cabecalho-lista-item, adicionando nele
-a propriedade display com o valor inline-block:*/
-/*Aumente os espaçamentos entre os textos com a propriedade margin de valor 0 16px:*/
-/*Aumente a fonte através da propriedade font-size de valor 24px.*/
 
 .cabecalho-lista-item{
     display: inline-block;
@@ -32,54 +21,98 @@ a propriedade display com o valor inline-block:*/
     font-size: 24px;
 }
 
-.cabecalho-lista-item a {
+.cabecalho-lista-item a{
     text-decoration: none;
-    color: #FFFFFF; /*cor*/
+    color: aliceblue;
 }
 
-/*Efeito alterar a cor quando passa o moue*/
-a:hover {
-color:#16e9f8
+a:hover{
+    color: blueviolet;
 }
 
-/*alterar a cor quando clicar com o mouse*/
 a:active{
-    color: cadetblue;(105, 144, 216);
+    color: darkmagenta;
 }
 
-
-/*Iniciar Seção escola*/
-
-/* crie um seletor (.) para a classe escola-imagem, determinando uma largura width de 25%:*/
-.escola-imagem{
-    width:25%;/*largura*/
-    height: 300px;/*altura*/
-    border-radius: 82px;/*para definir bordas arredondadas da imagem*/
-}
-
-/**/
 .escola{
-    background-image: linear-gradient(#ff00bf,#f10b8a);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
+   background-image: linear-gradient(#ff1493 ,hwb(328 62% 5% / 0.685));
+   color: aliceblue;
+   display: flex;
+   justify-content: center;
+   padding: 24px 0;
 }
 
-/**/
-.escola-div.conteudo{
+.escola-div-conteudo{
     width: 45%;
+    color: black;
 }
 
-/**/
 .escola-titulo{
     padding: 24px 0;
 }
 
-/**/
 p{
-    padding: 0 40px; /*alinhar o espaçamento*/
-    font-size: 20px;/*tamanho da fonte*/
-    font-family: Arial,Helvetica, sans-serif; /*especifica a fonte de um elemento*/
+    padding: 0 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.escola-imagem{
+    width: 30%;
+    height: 300px;
+    border-radius: 82px;
+}
+
+
+.estudante-imagem{
+    width: 120px;
+}
+
+.estudante{
+    background-color: #ff1493;
+    color: black;
+}
+
+.escola-titulo {
+    padding: 24px 0;
+    margin: 0 120px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.estudante-todos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0 60px;
+
+}
+
+.estudante-div{
+    text-align: center;
+    padding: 12px 0;
+}
+
+.estudante-imagem{
+    width: 120px;
+}
+
+.estudante-nome{
+    font-size: 14px;
+}
+
+.estudante-icone{
+    width: 24px;
+    padding: 4px 8px;
+}
+
+
+.rodape{
+    background-image: linear-gradient(#ff1493, hsla(328, 100%, 54%, 0.39));
+}
+
+.copyright{
+text-align: center;
+height: 100%;
+line-height: 100px;
+font-size: 12px;
 }
